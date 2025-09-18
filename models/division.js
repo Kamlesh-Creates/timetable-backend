@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const divisionSchema = new mongoose.Schema({
     name: { type: String, required: true, unique: true },
@@ -7,4 +7,4 @@ const divisionSchema = new mongoose.Schema({
 
 const Division = mongoose.model('Division', divisionSchema);
 
-export default Division;
+module.exports = Division;

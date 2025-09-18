@@ -1,9 +1,8 @@
-
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const settingsSchema = new mongoose.Schema({
   days: {
-    type: [String],   
+    type: [String],
     required: true
   },
   start_hour: {
@@ -20,4 +19,4 @@ const settingsSchema = new mongoose.Schema({
   }
 });
 
-export default mongoose.model("Settings", settingsSchema);
+module.exports = mongoose.model('Settings', settingsSchema);
